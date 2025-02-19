@@ -31,7 +31,6 @@ border_pen.hideturtle()
 #Set score = 0
 score = 0
 
-
 #Draw the score
 score_pen = turtle.Turtle()
 score_pen.speed(0)
@@ -50,7 +49,6 @@ player.penup()
 player.speed(0)
 player.setposition(0,-250)
 player.setheading(90)
-
 
 #Choose number of enemies
 number_of_enemies = 7
@@ -89,7 +87,6 @@ bulletspeed = 20
 #Ready - ready to fire
 #Fire - bullet is firing
 bulletstate = "ready"
-
 
 #player movement
 playerspeed = 15
@@ -234,7 +231,7 @@ while True:
         enemies[-1].shape("invader.gif")
         enemies[-1].speed(0)
 
-
+    
  #Final Boss
 
     if len(enemies) == 11 and score >= 500 and score <= 1000:
@@ -276,9 +273,3 @@ while True:
     if bullet.ycor()>275:
         bullet.hideturtle()
         bulletstate = "ready"
-
-  
-
-
-
-
